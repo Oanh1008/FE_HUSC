@@ -2,9 +2,78 @@
 <html>
     <head>
         <title>Thắng Lợi Group</title>
-        <link rel="stylesheet" href="css/base.css" />
+        <style>
+            :root{
+                --full-width:1700px;
+                --small-width:1400px;
+            }
+            *{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            div{
+                border: 1px solid #000;
+                padding: px;    
+                             <!--  chia khung -->
+            }
+            .header{
+                width: var(--full-width);
+                margin: 0 auto;
+                overflow: auto;
+            }
+            .header-logo{
+                width: 40%;
+                float:left
+            }
+            .header-menu{
+                width: 60%;
+                float: left;
+            }
+            .banner{
+                width:var(--full-width) ;
+                margin:auto;
+                padding:0;
+            }
+            .category{
+                width: var(--small-width);
+                margin: auto;
+                overflow: auto;
+            }
+            .category-item{
+                float: left;
+                width: 25%;
+            
+            }
+        </style>
     </head>
     <body>
-        
+        <div class="header">
+            <div class="header-logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="header-menu">
+                <img src="images/" alt="">
+            </div>
+        </div>
+        <div class="banner">
+            <img src="images/slide.png"  style="width:1600px" alt="">
+        </div>
+
+        <div class="category">
+            <div class="category-item">
+                <img src="images/image1.png" style="width:100%" alt="">
+            </div>
+            <div class="category-item">
+                <img src="images/image2.png" style="width:100%" alt="">
+            </div>
+            <div class="category-item">
+                <img src="images/image3.png" style="width:100%" alt="">
+            </div>
+            <div class="category-item">
+                <img src="images/image4.png" style="width:100%" alt="">
+            </div>
+        </div>
+
     </body>
 </html>
