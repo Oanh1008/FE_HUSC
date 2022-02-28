@@ -4,8 +4,8 @@
         <title>Thắng Lợi Group</title>
         <style>
             :root{
-                --full-width:1700px;
-                --small-width:1400px;
+                --full-width:100%;
+                --small-width:85%;
             }
             *{
                 box-sizing: border-box;
@@ -13,22 +13,32 @@
                 margin: 0;
             }
             div{
-                border: 1px solid #000;
-                padding: px;    
+                border: 0px solid #000;
+                padding: 0px;    
                              <!--  chia khung -->
             }
             .header{
+                justify-content: space-between;
+                height: 90px;
+                display: flex;
                 width: var(--full-width);
                 margin: 0 auto;
                 overflow: auto;
+                align-items: center;
             }
             .header-logo{
-                width: 40%;
-                float:left
+                width: auto;
+                float:left;
+                height: 90px;
+                margin-left: 10px;
             }
             .header-menu{
                 width: 60%;
+
                 float: left;
+            }
+            .menu-detail{
+                margin: 0px 10px;
             }
             .banner{
                 width:var(--full-width) ;
@@ -45,6 +55,53 @@
                 width: 25%;
             
             }
+            .category-item-name{
+                position: absolute; 
+                bottom: 20px; left: 50% ;
+                transform:translateX(-50%) ; 
+                font-weight: 700; 
+                text-transform: uppercase;
+            }
+            .nameofcompany{
+                width: var(--small-width);
+                height: 50px;
+                margin:auto
+                
+            }
+            .aboutcompany{
+                width: var(--small-width);
+                margin:auto;
+                overflow    : auto;
+                
+                
+            }
+            .aboutcompanydetail{
+                float :left;
+                width: 33.33333%;
+            }
+            .space{
+                width: 100%;
+                height: 20px;
+                margin: auto;
+                padding: 0%;
+            }
+            .footer{
+                width: var(--full-width);
+                margin: auto;
+                overflow: auto;
+                background-color: yellow;
+            }
+            .footerdetail{
+                float:left;
+                width: 33%;
+               padding:10px;
+            }
+
+            <!-- menu-->
+            .menu-detail-link{
+                
+            }
+            
         </style>
     </head>
     <body>
@@ -53,7 +110,23 @@
                 <img src="images/logo.png" alt="">
             </div>
             <div class="header-menu">
-                <img src="images/" alt="">
+                <ul style="display:flex ; list-style: none; transform: translateY(-100%); justify-content: flex-end; margin-right: 200px;"> <!--display: flex ::: chia hàng ngang như nhau, list-style:none : bỏ dấu chấm-->
+                    <li class="menu-detail">
+                        <a class="menu-detail-link"  href="#" style=" text-decoration: none; color: #000;">DỊCH VỤ</a>
+                    </li> <!--text-decoration: none; bỏ gạch ngang-->
+                    <li class="menu-detail">
+                        <a class="menu-detail-link" href="" style=" text-decoration: none; color: #000;">DỰ ÁN</a>
+                    </li>
+                    <li class="menu-detail">
+                        <a class="menu-detail-link" href="" style=" text-decoration: none; color: #000;">TIN TỨC </a>
+                    </li>
+                    <li class="menu-detail">
+                        <a class="menu-detail-link" href="" style=" text-decoration: none; color: #000;">LIÊN HỆ </a>
+                    </li>
+                    <li class="menu-detail">
+                        <a class="menu-detail-link" href="" style=" text-decoration: none; color: #000;">BẢNG GIÁ</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="banner">
@@ -61,17 +134,74 @@
         </div>
 
         <div class="category">
-            <div class="category-item">
-                <img src="images/image1.png" style="width:100%" alt="">
+            <div class="category-item  " style="position: relative;">
+                <p class="category-item-name" >
+                Văn phòng
+                </p> <!--font-weight :700 =boid--> 
+                <img src="images/image1.png" style="width:100%; " alt="">
             </div>
             <div class="category-item">
+                <p class="category-item-name " style=" position: absolute; bottom: 20px; left: 50% ;transform:translateX(-50%) ; font-weight: 700; text-transform: uppercase;">
+                    Biệt thự
+                </p>
                 <img src="images/image2.png" style="width:100%" alt="">
+                
             </div>
             <div class="category-item">
                 <img src="images/image3.png" style="width:100%" alt="">
+                <p class="category-item-name  style=" position: absolute; bottom: 20px; left: 50% ;transform:translateX(-50%) ; font-weight: 700; text-transform: uppercase;"">
+                    Căn hộ
+                </p>
             </div>
             <div class="category-item">
                 <img src="images/image4.png" style="width:100%" alt="">
+                <p class="category-item-name  style=" position: absolute; bottom: 20px; left: 50% ;transform:translateX(-50%) ; font-weight: 700; text-transform: uppercase;"">
+                    Nhà phố
+                </p>
+            </div>
+        </div>
+        <div class="nameofcompany">
+            <p style="">VỀ CÔNG TY</p>
+        </div>
+        <div class="aboutcompany">
+            <div class="aboutcompanydetail">
+                <img src="images/nha-may.jpg" style="width: 100%;"  alt="">
+            </div>
+            <div class="aboutcompanydetail">
+                <img src="images/showroom.jpg" style="width: 100%;" alt="">
+            </div>
+            <div class="aboutcompanydetail">
+                <img src="images/gioi-thieu.jpg" style="width: 100%;" alt="">
+            </div>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="footer">
+            <div class="footerdetail">
+               <p>Về chúng tôi <br>
+                Chính sách & Quy định chung <br>
+                Hướng dẫn đổi trả hàng <br>
+                Bảo hành <br>
+                Thanh toán <br>
+                Chính sách bảo mật
+                </p>
+            </div>
+            <div class="footerdetail">
+                <p>
+                    Địa chỉ: Lô 103, đường An Dương Vương, <br>
+                    khu đô thị An Cựu Huế. <br>
+                    Điện thoại: (0363)755300 - 332921 <br>
+                    Văn phòng tại Đà Nẵng - 18 Bạch Đằng
+                </p>
+            </div>
+            <div class="footerdetail">
+                <p>
+                    Giấy phép đăng ký kinh doanh 03421447, <br>
+                    Cấp ngày 12/03/2010 tại Sở Công  thưởng<br>
+                    tỉnh Thừa Thiên Huế.
+
+                </p>
             </div>
         </div>
 
