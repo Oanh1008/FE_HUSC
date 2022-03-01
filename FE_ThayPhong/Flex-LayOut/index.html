@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css in flex-box: 
+        display:flex
+        flex-drirection:row
+        flex-wrap:
+        justify-content:
+        align-item: flex-end-->
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
+        .container{
+            width: 700px;
+            background-color: aqua;
+            border: 2px solid gray;
+            padding: 10px;
+
+            display: flex;  
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            
+            align-content: flex-start;
+            
+           
+        }
+        .item{
+            
+            width: 100px;
+            background-color: burlywood;
+            border: 2px solid darkgray;
+            padding :10px;
+        }
+        #item1{
+            background-color: brown;
+            flex-shrink: 1;
+        }
+        #item2{
+            flex-shrink: 3333;
+        }
+        #item3{
+            flex-shrink: 1;
+        }
+        #item4{
+            flex-shrink: 1;
+        }
+        #item5{
+            flex-shrink: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">
+            1.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, blanditiis?
+        </div>
+        <div    class="item" id="item2">
+            2.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div class="item" id="item3">
+            3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, illum officia!
+        </div>
+        <div class="item" id="item4">
+            4.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nemo officia consequuntur?
+        </div>
+        <div class="item" id="item5">
+            5.Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        </div>
+    </div>
+    
+</body>
+</html>

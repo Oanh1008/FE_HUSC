@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           box-sizing: border-box; 
+           padding: 0;
+           margin: 0;
+        }
+        div{
+            border: 2px solid black;
+            padding:1px
+        }
+        .container-header-brand{
+            width:100%;
+
+            background-color: aqua;
+            border: 2px solid gray;
+            padding: 10px;
+
+            display: flex; 
+            flex-direction: row; 
+        }
+        .container-header-brand-item{
+            width: 33.33333%;
+            background-color: burlywood;
+            border: 2px solid darkgray;
+            padding :10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .container-header-brand-item-detail{
+            width: 100%;
+            background-color: burlywood;
+            border: 2px solid darkgray;
+            padding :10px;
+            justify-content: space-between;
+        }
+        .container-header-menu-item{
+            width:100%;
+
+            background-color: aqua;
+            border: 2px solid gray;
+            padding: 10px;
+
+            display: flex; 
+            flex-direction: row; 
+        }
+        .container-header-menu-item{
+            width: 100%;
+            background-color: crimson;
+            border: 2px solid darkgray;
+            padding :10px;
+            justify-content: space-between;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-header-brand">
+        <div class="container-header-brand-item"></div>
+        <div class="container-header-brand-item"></div>
+        <div class="container-header-brand-item">
+            <div class="container-header-brand-item-detail"></div>
+            <div class="container-header-brand-item-detail"></div>
+        </div>
+    </div>
+    <div class="container-header-menu-item">
+        <div class="container-header-menu-item" style="width: 45%;"></div>
+        <div class="container-header-menu-item" style="width: 25%;"></div>
+    </div>
+</body>
+</html>
